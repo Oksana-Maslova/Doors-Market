@@ -1,0 +1,193 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title Doors Market
+        link(href='styles.css?t=#version', rel='stylesheet')
+        script(type="text/javascript", src="./js/jquery.min.js")
+    body
+        .header
+            .background
+                .top-header-row.row.middle-lg.middle-md.middle-sm.middle-xs
+                    .content-wrapper
+                        .row.middle-lg.middle-md.middle-sm.middle-xs.center-sm.center-xs
+                            input#hidden(type="checkbox", class="hidden")
+                            label.menu-icon.col-lg-6.col-md-6.col-sm-6.col-xs-6(for="hidden")
+                            .menu
+                                .row.start-lg.start-md.center-sm.center-xs
+                                    a.col-lg-12.col-md-12.col-sm-12.col-xs-12(href="#") на главную
+                                .row.start-lg.start-md.center-sm.center-xs
+                                    a.col-lg-12.col-md-12.col-sm-12.col-xs-12(href="#") о компании
+                                .row.start-lg.start-md.center-sm.center-xs
+                                    a.col-lg-12.col-md-12.col-sm-12.col-xs-12(href="#") каталог продукции
+                                .row.start-lg.start-md.center-sm.center-xs
+                                    a.col-lg-12.col-md-12.col-sm-12.col-xs-12(href="#") акции
+                                .row.start-lg.start-md.center-sm.center-xs
+                                    a.col-lg-12.col-md-12.col-sm-12.col-xs-12(href="#") гарантии
+                                .row.start-lg.start-md.center-sm.center-xs
+                                    a.col-lg-12.col-md-12.col-sm-12.col-xs-12(href="#") контакты
+                            .col-lg-2.col-md-2.col-sm-2.col-xs-2
+                                .row.center-lg.center-md.center-sm.center-xs
+                                    .icon-cart
+                                    .cart-block
+                                        .row Товаров: 3
+                                        .row Сумма 5.000грн.
+                            .col-lg-1.col-md-1.col-sm-3.col-xs-3
+                                .row.center-lg.center-lg.start-sm.start-xs
+                                    .lang.center-xs ru
+                                    .lang.red.center-xs ua
+                            .search-block.col-xs-3
+                                input#search(placeholder="Поиск")
+                                label.icon-search(for="search")
+                .content-wrapper
+                    .row.center-lg.center-md.center-sm.center-xs.top-lg.top-md.top-sm.top-xs
+                        .left-block.col-lg-2.col-md-2
+                            .row
+                                .login-block.col-lg-12.col-md-12
+                                    .row Войти на сайт
+                                    .row.middle-lg.middle-md
+                                        a.login(href="#") Зарегистрироваться
+                            .row.between-lg.between-md
+                                a(href="#")
+                                    .social.twitter
+                                a(href="#")
+                                    .vk.social
+                                a(href="#")
+                                    .facebook.social
+                                a(href="#")
+                                    .rss.social
+                                a(href="#")
+                                    .google-plus.social
+                            .row.center-lg.center-md.middle-lg.middle-md
+                                a.button-red.col-lg-12.col-md-12(href="#")
+                                    .row.start-lg.start-md.middle-lg.middle-md
+                                        .cart-m
+                                        .col
+                                            .row(style="font-family: HelveticaNeueCyr-Bold, sans-serif; font-size: 20px") Корзина
+                                            .row Товаров: 3
+                                            .row(style="font-size: 12px") На сумму: 5.000
+                        .col-lg-3.col-md-3
+                        .col-lg-2.col-md-2.col-sm-12.col-xs-12
+                            .row.center-lg.center-md.center-sm.center-xs
+                                .logo
+                        .col-lg-3.col-md-3
+                        .right-block-desktop.col-lg-2.col-md-2
+                            .row
+                                .info-block.start-xs
+                                    p Телефон горячей линии
+                                    p(style="font-family: HelveticaNeueCyr-Medium, sans-serif; font-size: 24px") +12(034) 567 89 10
+                                    p (пн.- пт. с 9.00 до 18.00)
+                                a.button-red.col-xs-12.center-xs(href="#")(style="position: relative; left: -21px; margin-top: 0; padding: 9px 0 0 5px")
+                                    p(style="font-size: 36px; line-height: 31px") вызвать
+                                    p(style="font-size: 23px") замерщика
+                        .right-block-mobile.col-sm-12.col-xs-12
+                            .row
+                                .info-block.col-sm-6.col-xs-6.center-sm.center-xs
+                                    p Телефон горячей линии
+                                    p(style="font-family: HelveticaNeueCyr-Medium, sans-serif; font-size: 24px") +12(034) 567 89 10
+                                    p (пн.- пт. с 9.00 до 18.00)
+                                a.button-red.col-sm-6.col-xs-6.center-xs(href="#")(style="position: relative; left: -21px; margin-top: 0; padding: 9px 0 0 5px")
+                                    p(style="font-size: 36px; line-height: 31px") вызвать
+                                    p(style="font-size: 23px") замерщика
+                       .door-block.row.between-lg.between-md
+                           img(src="./images/door_1.png")
+                           img(src="./images/door_2.png")
+                           img(src="./images/door_3.png")
+                           img(src="./images/door_4.png")
+                           img(src="./images/door_5.png")
+        .background(style="margin-bottom: -130px;")
+            .content-wrapper
+                .row
+                    ul#slider-dots
+                .row
+                    .col-lg-12.col-md-12.col-sm-12.col-xs-12#viewport
+                        ul#slidewrapper
+                            .row.center-lg.center-md.center-sm.center-xs
+                                li.slide
+                                    img.slide-img.col-lg-12.col-md-12.col-sm-12.col-xs-12(src="./images/slide-image.png" alt='1')
+                                    h1 Дверь на дачу
+                                li.slide
+                                    img.slide-img.col-lg-12.col-md-12.col-sm-12.col-xs-12(src="./images/slide-image.png" alt='2')
+                                    h1 Дверь на дачу
+                                li.slide
+                                    img.slide-img.col-lg-12.col-md-12.col-sm-12.col-xs-12(src="./images/slide-image.png" alt='3')
+                                    h1 Дверь на дачу
+                                li.slide
+                                    img.slide-img.col-lg-12.col-md-12.col-sm-12.col-xs-12(src="./images/slide-image.png" alt='4')
+                                    h1 Дверь на дачу
+            .content-wrapper
+                .row.center-lg.center-md.center-sm.center-xs
+                    h2 о компании
+                .main
+                    .row
+                        .main-menu.col-lg-2.col-md-2
+                            .row главная
+                            .row(style="color: #cc0000;") о компании
+                            .row каталог продукции
+                            .row оплата / доставка
+                            .row акции
+                            .row гарантия
+                            .row контакты
+                        .col-lg-8.col-md-8.col-sm-12.col-xs-12
+                            .content
+                                p Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности позволяет оценить значение существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что консультация с широким активом представляет собой интересный эксперимент проверки направлений прогрессивного развития.
+                                p Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                                p Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. С другой стороны сложившаяся структура организации способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры влечет за собой процесс внедрения и модернизации соответствующий условий активизации.
+                                p С другой стороны начало повседневной работы по формированию позиции позволяет оценить значение дальнейших направлений развития. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. С другой стороны начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки новых предложений. Равным образом рамки и место обучения кадров в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям.
+                                p Повседневная практика показывает, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании модели развития.
+                                p Товарищи! начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке систем массовогоу частия.
+                        .advertising-block.col-lg-2.col-md-2
+                            .row.center-lg.center-md
+                                .col-lg-12.col-md-12
+                                    .info-row.row.center-lg.center-md Телефон горячей линии
+                                    .info-row.row.center-lg.center-md(style="font-size: 20px") +38(067) 402 71 01
+                                    .info-row.row.center-lg.center-md (пн.- пт. с 9.00 до 18.00)
+                                a.button-call.center-lg.center-md(href="#")
+                                    p(style="font-size: 31px; line-height: 27px") вызвать
+                                    p(style="font-size: 21px") замерщика
+                                .col-lg-12.col-md-12
+                                    .row.middle-lg.middle-md
+                                        a.banner.col-xs-12(href="#")
+                                            .row.center-lg.center-md.middle-lg.middle-md(style="font-size: 42px") банерная
+                                            .row.center-lg.center-md.middle-lg.middle-md(style="font-size: 48px; line-height: 38px;") область
+                                .col-lg-12.col-md-12
+                                    .info-row.row.center-lg.center-md Телефон горячей линии
+                                    .info-row.row.center-lg.center-md(style="font-size: 20px") +38(067) 402 71 01
+                                    .info-row.row.center-lg.center-md (пн.- пт. с 9.00 до 18.00)
+                                a.button-call.center-lg.center-md(href="#")
+                                    p(style="font-size: 31px; line-height: 27px") вызвать
+                                    p(style="font-size: 21px") замерщика
+                                .col-lg-12.col-md-12
+                                    .row.middle-lg.middle-md
+                                        a.banner.col-xs-12(href="#")
+                                            .row.center-lg.center-md.middle-lg.middle-md(style="font-size: 42px") банерная
+                                            .row.center-lg.center-md.middle-lg.middle-md(style="font-size: 48px; line-height: 38px;") область
+        .footer-desktop
+            .menu-footer
+                .row.middle-lg.middle-md.middle-sm.middle-xs
+                    .content-wrapper
+                        .row
+                            .col-lg-2.col-md-2(style="color: #fa6060") Nakitel ©2014
+                            .col-lg-4.col-md-4
+                            .col-lg-6.col-md-6
+                                .row.between-lg.between-md
+                                    a(href="#") Контакты
+                                    a(href="#") Акции
+                                    a(href="#") Каталог
+                                    a(href="#") Оплата / Доставка
+                                    a(href="#") Гарантия
+        .footer-mobile
+            .menu-footer
+                .row.middle-sm.middle-xs
+                    .col-xs-12.col-sm-12
+                        .row.center-xs.center-sm
+                            a.col-xs-6.col-sm-6(href="#") Контакты
+                            a.col-xs-6.col-sm-6(href="#") Акции
+                        .row.center-xs.center-sm
+                            a.col-xs-6.col-sm-6(href="#") Каталог
+                            a.col-xs-6.col-sm-6(href="#") Оплата / Доставка
+                        .row.center-xs.center-sm
+                            a.col-xs-12.col-sm-12(href="#") Гарантия
+                        .row.center-xs.center-sm
+                            .col-xs-12.col-md-12(style="color: #fa6060; padding-top: 15px") Nakitel ©2014
+        script(type="text/javascript", src="index.js")
